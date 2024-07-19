@@ -1,0 +1,273 @@
+@font-face {
+    font-family: NType82Regular;
+    src: url("./fonts/NType82-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NType82Headline;
+    src: url("./fonts/NType82-Headline.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Ndot55;
+    src: url("./fonts/Ndot-55.otf") format("opentype");
+}
+
+@font-face {
+    font-family: LetteraMonoLLCondLightRegular;
+    src: url("./fonts/LetteraMonoLLCondLight-Regular.otf") format("opentype");
+}
+
+/* MDPrimer Fonts */
+@font-face {
+    font-family: MDPrimerBlack;
+    src: url("./fonts/MDPrimerTrial-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MDPrimerBold;
+    src: url("./fonts/MDPrimerTrial-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MDPrimerLight;
+    src: url("./fonts/MDPrimerTrial-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MDPrimerMedium;
+    src: url("./fonts/MDPrimerTrial-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MDPrimerRegular;
+    src: url("./fonts/MDPrimerTrial-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MDPrimerSemibold;
+    src: url("./fonts/MDPrimerTrial-Semibold.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+/* nav section */
+.nav-section {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 1.5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-logo {
+    font-family: 'Ndot55';
+    font-size: 1.5rem;
+}
+
+.nav-options {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-family: 'MDPrimerRegular';
+}
+
+.nav-profile-icon {
+    transform: scale(0.8);
+}
+
+/* hero section */
+.hero-section {
+    background-image: url('./images/2560_x_2050_3392x.png');
+    width: 100%;
+    /* background-position: -100px top; */
+    /* background-position: -200px; */
+    /* background-position: 20vw 10vh; */
+    /* background-position: 20vw  -20%; */
+    background-position: calc(100vw - 80vw) calc(100vh - 80vh);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+.hero-inner {
+    color: #fff;
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* justify-content: center; */
+    /* gap: 15vh; */
+    font-family: 'MDPrimerMedium';
+    gap: 30px;
+}
+
+.hero-inner-top {
+    font-family: 'MDPrimerSemibold';
+}
+
+.hero-inner span {
+    font-family: 'Ndot55';
+}
+
+.hero-header-text {
+    font-size: 3rem;
+    /* font-size: 4vmax; */
+    margin-top: 20vh;
+}
+
+.hero-inner-storage {
+    font-family: 'MDPrimerLight';
+    font-size: 1.6rem;
+    margin-top: 5px;
+}
+
+.hero-inner-bottom {
+    font-family: 'MDPrimerMedium';
+}
+
+.hero-inner button {
+    background-color: #fff;
+    border: none;
+    padding: 0.7rem 3rem;
+    font-size: 0.8rem;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-family: 'MDPrimerMedium';
+}
+
+.hero-inner-price {
+    font-size: 1.8rem;
+}
+
+.hero-inner-price-description {
+    font-size: 1rem;
+    font-family: 'MDPrimerLight';
+    margin-top: 3px;
+}
+
+/* max-width: 1024px */
+@media screen and (max-width: 1024px) {
+    .hero-inner{
+        justify-content: start;
+        gap: 30px;
+    }
+
+    .hero-header-text{
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-options {
+        display: none;
+    }
+
+    .hero-section {
+        background-position: 1vw 18vh;
+        background-size: 150vw;
+    }
+
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-profile-icon {
+        transform: scale(0.7);
+    }
+
+    .hero-header-text {
+        font-size: 2.4rem;
+    }
+
+    .hero-inner-storage {
+        font-size: 1rem;
+    }
+
+    .hero-inner-price {
+        font-size: 1.2rem;
+    }
+
+    .hero-inner-price-description {
+        font-size: 0.6rem;
+    }
+
+    .hero-inner button {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    .hero-section {
+        background-position: center 30vh;
+        background-size: 250vw;
+        /* padding-top: 40px; */
+    }
+
+    .hero-inner {
+        justify-content: start;
+        gap: 10vh;
+        align-items: center;
+    }
+
+    .hero-header-text {
+        font-size: 7vw;
+        /* font-size: 1.5rem; */
+        /* padding-top: 5vh; */
+        margin-top: 5vh;
+    }
+
+    .hero-inner-storage {
+        display: none;
+    }
+
+    .hero-inner-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-inner-price {
+        /* font-size: 1rem; */
+        font-size: 5vw;
+    }
+
+    .hero-inner-price-description {
+        font-size: 2vw;
+    }
+
+    .hero-inner button {
+        font-size: 2.4vw;
+        /* transform: scale(4vw); */
+        display: flex;
+        padding: 1.8vh 5vw;
+    }
+
+    .nav-logo {
+        font-size: 1rem;
+    }
+
+    .nav-profile-icon {
+        transform: scale(0.6);
+    }
+
+    .nav-container {
+        padding: 0.5rem 1.5rem;
+    }
+}
