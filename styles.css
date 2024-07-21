@@ -197,6 +197,7 @@ body {
 .testimonials-text {
     font-family: 'MDPrimerLight';
     font-size: 1.15rem;
+    color: #181818;
 }
 
 /* testimonial section ends */
@@ -246,6 +247,7 @@ body {
 
 .feature-grid p {
     font-size: 0.8rem;
+    color: #c6c6c6;
 }
 
 .feature-grid-span-1 {
@@ -446,6 +448,7 @@ body {
     font-size: 3rem;
     text-align: left;
     padding: 2rem 0;
+    padding-top: 4rem;
     font-family: 'MDPrimerSemibold';
     font-weight: 100;
     /* color: #1f1f1f; */
